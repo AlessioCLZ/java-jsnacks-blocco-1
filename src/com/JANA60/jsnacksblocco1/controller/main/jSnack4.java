@@ -1,11 +1,25 @@
 package com.JANA60.jsnacksblocco1.controller.main;
 
+import java.util.Random;
+
 public class jSnack4 {
 
 	public static void main(String[] args) 
 	{
-		int[] numbers= {5,29,45,30,10,2,8,7};
-		int res=0;
+		Random r = new Random();
+		int res=0, max=100;
+		int[] numbers= new int[r.nextInt(max)];
+		
+		
+		
+		
+		for (int j=0;j<numbers.length;j++)
+		{
+			numbers[j]=r.nextInt(max);
+			System.out.println("Position "+(j+1)+ ": " +numbers[j]);
+		}
+		
+		
 		
 		for(int i=1; i<numbers.length;i+=2)
 		{
